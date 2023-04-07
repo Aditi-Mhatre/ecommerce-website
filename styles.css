@@ -1,0 +1,490 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background-color: #f3ece6;
+}
+
+.navbar{
+    position: fixed;
+    overflow: hidden;
+    min-width: max-content;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6vw;
+    background-color: #f3ece6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.3vw;
+    z-index: 10;
+} 
+
+.navbar a{
+    color: #000;
+}
+
+.navbar .left{
+    height: inherit;
+    display: flex;
+    flex: 2vw 2vw 0;
+    align-items: center;
+}
+
+.flex-item{
+    width: 7vw;
+    height: inherit;
+}
+
+#icon{
+    letter-spacing: 0.1vw;
+    align-content: center;
+    height: 100%;
+    margin-left: 1vw;
+    width: 15vw;
+}
+
+#icon a{
+    display: block;
+    height: inherit;
+    padding: 2.2vw 0.8vw;
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: black;
+}
+
+
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+
+.dropbtn{
+    outline: none;
+    color: #000;
+    width: inherit;
+    font-family: inherit;
+    height: inherit;
+    cursor: pointer;
+    border: none;
+    font-size: 1.3vw;
+    letter-spacing: 0.1vw;
+}
+
+.navbar a:hover, .dropbtn:hover{
+    color: darkgrey;
+}
+
+
+.dropdown-content{
+    display: none;
+    position: fixed;
+    text-align: center;
+    background-color: #f9f9f9;
+    min-width: 150px;
+}
+
+.shop{
+    left: 0vw;
+    width: 100vw;
+    height: 80%;
+    justify-content: space-evenly;
+}
+
+.shop:hover{
+    display: flex;
+}
+
+.shop .col1{
+    width: 33vw;
+    float:none;
+    padding: 1vw 1.5vw;
+    display: block;
+    color: black;
+    text-align:left;
+}
+
+.col1 h4{
+    padding: inherit;
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+.shop .col1 img{
+    height: 15vw;
+    padding: inherit;
+}
+
+
+
+.dropdown-content a{
+    float:none;
+    padding: inherit;
+    font-size: 1vw;
+    display: block;
+    color: black;
+    text-align:left;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content{
+    display: flex;
+}
+
+.right{
+    float: right;
+    overflow: hidden;
+}
+
+.navbar .right{
+    margin-right: 5vw;
+    height: inherit;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar .right .flex-item{
+    width: 5vw;
+}
+
+.right .flex-item button{
+    width: inherit;
+    font-size: 1.3vw;
+    height: inherit;
+    cursor: pointer;
+    border: none;
+}
+
+.navbar .right i{
+    font-size: 1.8vw;
+}
+
+
+.login{
+    background-color: black;
+    color: white;
+    font-size: 12pt;
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    width: 120px;
+}
+
+#registration{
+    text-decoration: underline;
+}
+
+#cart-sym{
+    font-size: 1.5vw;
+}
+
+.right p{
+    font-size: 8pt;
+    margin: 0px;
+    padding:0;
+}
+
+button{
+    background-color: inherit;
+}
+
+.container{
+    width: 100%;
+    float: left;
+    left: 0;
+}
+
+.banner{   
+    max-width:100%;
+    display: none;
+}
+
+#ad-container{
+    width: 100%;
+    background-color: #e1e5e8;
+    display: flex;
+}
+
+.right{
+    float: right;
+}
+
+.left{
+    float: left;
+}
+
+.ad-right{
+    width:50%;
+    box-shadow: 5px 10px 5px #e1e5e8 inset;
+}
+
+.ad-left{
+    width: 50%;
+}
+
+.ad-image{
+    width: 100%;
+    border-radius: 50% 0 0 0; 
+}
+
+.ad-box{
+    height: 40%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    top: 30%;
+    padding: 5%;
+}
+
+.ad-label{
+    font-size: 3vw;
+}
+
+.ad-btn{
+    border: 0.2vw solid #000;
+    color: #000;
+    background-color: transparent;
+    padding: 3%;
+    margin: 2% 0;
+    align-self: center;
+    width: 50%;
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+
+.ad-btn:hover{
+    background-color: #000;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.new-collection {
+    width: 50%;
+}
+
+.new-collection img{
+    width: 100%;
+}
+
+#new-collection{
+    display:flex;
+}
+
+#new-collection .right{
+    width: 50%;
+    background: url(/skincare/img/foam-aesthetic.png);
+}
+
+#new-collection .ad-box{
+    width: 100%; 
+    align-items: center; 
+    height: 35%;
+    top: 25%;
+    color: #fff;
+}
+
+#new-collection .ad-btn{
+    width: 30%;
+    color: #fff;
+    border: 0.2vw solid #fff;
+}
+
+#new-collection .ad-btn:hover{
+    color: gray;
+    background-color: #fff;
+}
+
+.subscription-box{
+    width: 80%;
+    margin: 3vw 0;
+    position: relative;
+    left: 10%;
+    text-align: center;
+    padding: 1%;
+}
+
+.subscribe-label{
+    font-size: 2vw;
+    margin: 1.5% 0.5%;
+    letter-spacing: 0.2vw;
+}
+
+.subscription-box input[type=email]{
+    font-size: 1.5vw;
+    display: inline-block;
+    width: 60%;
+    padding: 0.7vw;
+    color: #000;
+    border: 1px solid #ccc;
+}
+
+.subscribe-btn{
+    width: 20%;
+    font-size: 1.5vw;
+    display: inline-block;
+    border: 0.2vw solid #000;
+    background-color: transparent;
+    padding: 0.5vw;
+    color: #000;
+    margin: 2% 0;
+}
+
+.subscribe-btn:hover{
+    font-weight: bolder;
+    background-color: salmon;
+    border: none;
+    color: #fff;
+    border: 0.2vw solid salmon;
+}
+
+.form{
+    margin-top: 6vw;
+    position: relative;
+    left: 30%;
+    width: 40%;
+    border-radius: 0.3vw;
+    padding: 1vw 1vw;
+}
+
+.form h2{
+    text-align: center;
+    font-size: 2.5vw;
+    letter-spacing: 0.1vw;
+    color: #000;
+}
+
+.form form{
+    background-color: #fff;
+    margin: 1vw 0;
+    border-radius: 0.4vw;
+    padding: 3vw 4vw 2vw 4vw;
+}
+
+.form input, .form label, .form a{
+    width: 100%;
+    position: inherit;
+    font-size: 1.2vw;
+    padding: 0.3vw;
+    margin: 0.7vw 0.3vw;
+    color: #000;
+}
+
+.form label{
+    font-weight: bold;
+}
+
+.form a:hover, .create-account a:hover{
+    color: darkgray;
+}
+
+
+.form input[type='email'], input[type='password'], input[type='text']{
+    height: 3vw;
+    background-color: #eee;
+    border-radius: 0.4vw;
+    border: none;
+}
+
+.form input[type='submit']{
+    margin-top: 2vw;
+    padding: 1vw;
+    background-color: #000;
+    border: none;
+    border-radius: 0.3vw;
+    color: #fff;
+}
+
+.form input[type='submit']:hover{
+    background-color: salmon;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.create-account{
+    position: relative;
+    bottom: 0px;
+    text-align: center;
+    margin: 5% 0;
+}
+
+#password-length, #disclaimer{
+    font-size: 0.9vw;
+    color: #666;
+    margin: 0.5vw 0.3vw;
+    padding: 0 0.1vw;
+}
+
+.social-media{
+    width: 100%;
+    height: 4vw;
+    display: flex;
+    padding: 3vw 0;
+    position: relative;
+    justify-content: center;
+
+}
+
+#sign-in{
+    width: 7vw;
+    height: 3.5vw;
+    border: 2px solid #000;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+#sign-in a{
+    background-color: transparent;
+    color: #000;
+    width: inherit;
+    font-size: 1.3vw;
+    text-decoration: none;
+}
+
+#sign-in a:hover{
+    color: #000;
+}
+
+#sign-in:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.social-media .flex-item{
+    width: 5vw;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.social-media .flex-item a{
+    color: #000;
+    text-decoration: none;
+    font-size: 2.3vw;
+}
+
+
+.footer p{
+    width: 100%;
+    text-align: center;
+    padding: 2vw 0;
+    height: 5vh;
+}
+
+

@@ -8,6 +8,7 @@
         <link rel="shortcut icon" type="image/png" href="./img/favicon.png"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="animation.js" async></script>
+        <script src="cart.js" async></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="navigation-bar.html" rel="import" />
         <link href="footer.html" rel="import" />
@@ -18,7 +19,7 @@
         </div>
         <div class="grid-container">
             <div class="product">
-                <img class="pic" src="/website/img/butter2.jpg" alt="Body Butter 2">
+                <img class="pic" src="./img/butter2.jpg" alt="Body Butter 2">
                 <div class="prod-info">
                     <p class="title">Mango (50ml)</p>
                     <p class="price">$60</p>
@@ -26,7 +27,7 @@
                 </div>
             </div>
             <div class="product">
-                <img class="pic" src="/website/img/butter3.jpg" alt="Body Butter 3">
+                <img class="pic" src="./img/butter3.jpg" alt="Body Butter 3">
                 <div class="prod-info">
                     <p class="title">Shea (50ml)</p>
                     <p class="price">$60</p>
@@ -34,7 +35,7 @@
                 </div>
             </div>
             <div class="product">
-                <img class="pic"src="/website/img/butter4.jpg" alt="Body Butter 4">
+                <img class="pic"src="./img/butter4.jpg" alt="Body Butter 4">
                 <div class="prod-info">
                     <p class="title">Rich Plum (50ml)</p>
                     <p class="price">$60</p>
@@ -42,7 +43,7 @@
                 </div>
             </div>
             <div class="product">
-                <img class="pic" src="/website/img/butter6.jpg" alt="Body Butter 6">
+                <img class="pic" src="./img/butter6.jpg" alt="Body Butter 6">
                 <div class="prod-info">
                     <p class="title">Fuji Green Tea (50ml)</p>
                     <p class="price">$60</p>
@@ -50,9 +51,19 @@
                 </div>
             </div>
         </div>
+        <div class="modal" id="mycart">
+            <div class="cart-content">
+                <span class="close" style="color:black">&times;</span>
+                <table class="row"></table>
+            </div>
+            <div class="checkout">
+                <p class="empty">Your shopping cart is empty</p>
+                <span class="value">$ 0</span>
+                <a href="#checkout"><button class="cartbtn">Check Out</button></a>
+            </div>
+        </div>
     </body>
     <footer>
-        <hr>
         <div class="social-media">
             <div class="flex-item"><a href="#d"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
             <div class="flex-item"><a href="#f"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>

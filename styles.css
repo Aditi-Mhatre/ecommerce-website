@@ -383,6 +383,69 @@ button{
     font-weight: bold;
 }
 
+.pic{
+    width: 90%;
+    margin: 10px 5px;
+    
+}
+
+.close{
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 30px;
+    color: black;
+}
+
+.checkout a{
+    text-decoration: none;
+}
+
+.cart-content{
+    max-height: calc(100vh - 400px);
+    overflow-y: auto;
+}
+
+.value{
+    display: block;
+    font-size: 16pt;
+    margin-bottom: 20px;
+}
+
+.row{
+    position: relative;
+    width: 100%;
+    left: 0;
+    padding: 20px 40px;
+    font-size: 14pt;
+    justify-self: center;
+    justify-content: space-between;
+}
+
+.num{
+    width: 50px;
+    margin: 5px;
+}
+
+td .item{
+    width: 100px;
+}
+
+.del{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 10pt;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.empty{
+    margin: 2px 40px 50px 2px;
+    font-size: 16pt;
+}
+
 .form a:hover, .create-account a:hover{
     color: darkgray;
 }

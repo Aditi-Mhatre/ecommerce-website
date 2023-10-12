@@ -4,8 +4,8 @@
       var click = x[i];
       console.log(click);
       click.addEventListener("click", added);
-    //   click.addEventListener("click", itemIn);
-    //   click.addEventListener("click", updateTotal)
+      click.addEventListener("click", itemIn);
+      click.addEventListener("click", updateTotal);
   }
 
 //changes "Add to Cart" to "Added" 
@@ -15,7 +15,7 @@ function added(){
     if (buttonClick.innerText == "Add to Cart"){
         buttonClick.innerText = "Item in Cart";
         buttonClick.style.backgroundColor = "salmon";
-        updateCart();
+        // updateCart();
         addItem();
     }else{
         buttonClick.innerText = "Add to Cart";
@@ -52,11 +52,11 @@ function addToCart(title,price,image){
     row.classList.add("row");
     var cartItem = document.getElementsByClassName("row")[0];
     var cartContent = `
-            <td><img name="img" class="display" src=${image}><td>
-            <td><span name="item" class="item">${title}</span><td>
-            <td><input name="qty" class="num" name="qty" type="number" value = 1><td>
-            <td><span name="price" class="cost">${price}</span><td>
-            <td><button class="del">Remove</button><td>
+            <td><img name="img" class="display" src=${image}></td>
+            <td name="item" class="item">${title}</td>
+            <td><input name="qty" class="num" name="qty" type="number" value = 1></td>
+            <td name="price" class="cost">${price}</td>
+            <td><button class="del">Remove</button></td>
         `
     row.innerHTML = cartContent;
     cartItem.append(row);
@@ -103,16 +103,16 @@ function removeItem(){
   if (content == ""){
     var empty = document.getElementsByClassName("empty")[0];
     empty.style.display = "block";
-    var btn = document.getElementsByClassName("cartbtn")[0];
+    var btn = document.getElementById("checkout-btn");
     btn.style.display = "none";
-    var sum = document.getElementsByClassName("value")[0];
-    sum.style.display = "none";
+    var total = document.getElementsByClassName("value")[0];
+    total.innerText = "$ 0";
     var cbtn = document.getElementsByClassName("img-btn");
     for (var i = 0; i < cbtn.length; i ++){
       cbtn[i].innerText = "Add to Cart";
     }
   }
-  updateCart();
+  // updateCart();
   updateTotal();
 }
 
@@ -144,14 +144,8 @@ function removeItem(){
 function itemIn(){
   var empty = document.getElementsByClassName("empty")[0];
   empty.style.display = "none";
-  var checkOut = document.getElementsByClassName("cartbtn")[0];
-  checkOut.style.display = "inline";
+  var checkOut = document.getElementById("checkout-btn");
+  checkOut.style.display = "block";
   var carttotal = document.getElementsByClassName("value")[0];
   carttotal.style.display = "block";
-  document.querySelector('#checkout-btn').disabled = false;
-
 }
-
-
-
-

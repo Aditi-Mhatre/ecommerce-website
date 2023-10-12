@@ -8,11 +8,10 @@
         <link rel="stylesheet" href="./product-styles.css">
         <link rel="shortcut icon" type="image/png" href="./img/favicon.png"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="animation.js" async></script>
-        <script src="./cart.js" async></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>       
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>    
+        <script type="text/javascript" src="./cart.js" async></script>   
     </head>
     <header>
         <nav class="navbar">
@@ -59,32 +58,32 @@
         </div>
         <div class="grid-container">
             <div class="product">
-                <img class="pic" src="./img/butter2.jpg" alt="Body Butter 2">
                 <div class="prod-info">
+                    <img class="pic" src="./img/butter2.jpg" alt="Body Butter 2">
                     <p class="title">Mango (50ml)</p>
                     <p class="price">$60</p>
                     <button class="img-btn">Add to Cart</button>
                 </div>
             </div>
             <div class="product">
-                <img class="pic" src="./img/butter3.jpg" alt="Body Butter 3">
                 <div class="prod-info">
+                    <img class="pic" src="./img/butter3.jpg" alt="Body Butter 3">
                     <p class="title">Shea (50ml)</p>
                     <p class="price">$60</p>
                     <button class="img-btn">Add to Cart</button>
                 </div>
             </div>
             <div class="product">
-                <img class="pic"src="./img/butter4.jpg" alt="Body Butter 4">
                 <div class="prod-info">
+                    <img class="pic"src="./img/butter4.jpg" alt="Body Butter 4">
                     <p class="title">Rich Plum (50ml)</p>
                     <p class="price">$60</p>
                     <button class="img-btn">Add to Cart</button>
                 </div>
             </div>
             <div class="product">
-                <img class="pic" src="./img/butter6.jpg" alt="Body Butter 6">
                 <div class="prod-info">
+                    <img class="pic" src="./img/butter6.jpg" alt="Body Butter 6">
                     <p class="title">Fuji Green Tea (50ml)</p>
                     <p class="price">$60</p>
                     <button class="img-btn">Add to Cart</button>
@@ -94,20 +93,23 @@
 
   
     <!-- Modal -->
-    <div class="modal" id="myCart" role="dialog">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal bd-example-modal-lg" id="myCart" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-dialog modal-lg" role="document">
             <!-- Modal content-->
             <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <h4 class="modal-title">Cart</h4>
             </div>
-            <div class="modal-body">
-                <p>Cart is empty</p>
+            <div class="modal-body" id="cart-content">
+                <p class="empty">Cart is empty</p>
+                <table class="row"></table>
             </div>
             <div class="modal-footer">
+                <a>Total:</a>
+                <a class="btn btn-outline-secondary mr-auto value">$ 0</a>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" id="checkout-btn" disabled>Checkout</button>
+                <button type="button" class="btn btn-primary" id="checkout-btn">Checkout</button>
             </div>
             </div>
         </div>

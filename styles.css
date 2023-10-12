@@ -50,6 +50,7 @@ body{
     width: 15vw;
 }
 
+
 #icon a{
     display: block;
     height: inherit;
@@ -398,19 +399,15 @@ button{
     color: black;
 }
 
-.checkout a{
+/* .checkout a{
     text-decoration: none;
-}
+} */
 
-.cart-content{
-    max-height: calc(100vh - 400px);
-    overflow-y: auto;
-}
 
 .value{
-    display: block;
-    font-size: 16pt;
-    margin-bottom: 20px;
+    display: inline;
+    /* font-size: 16pt;
+    margin-bottom: 20px; */
 }
 
 .row{
@@ -432,9 +429,12 @@ td .item{
     width: 100px;
 }
 
+td{
+    border:2px solid red;
+}
+
 .del{
-    background-color: black;
-    color: white;
+    color: black;
     text-align: center;
     font-size: 10pt;
     margin: 5px;
@@ -550,4 +550,15 @@ td .item{
     height: 5vh;
 }
 
+.display{
+    max-width: 70px;
+    margin: 2px;
+}
 
+.modal-footer a{
+    font-weight: bold;
+}
+
+#checkout-btn{
+    display:none;
+}

@@ -16,3 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+window.onpageshow = function(event) {
+    if (event.persisted) {
+        location.reload();
+    }
+};
